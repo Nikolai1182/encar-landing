@@ -27,6 +27,20 @@ function outputPath(): string {
 }
 
 export async function updateCars(): Promise<UpdateCarsResult | UpdateCarsError> {
+  /**
+   * На Vercel serverless у процесса только read-only ФС (нет постоянной записи в `public/`).
+   * Иначе `mkdir('/var/task/public')` падает с ENOENT / запретом записи.
+   * Каталог обновляют локально: `npm run update-cars` → коммит `public/data/cars.json` → push.
+   */
+  if (process.env.VERCEL === "1") {
+    return {
+      ok: false,
+      error:
+        "На Vercel нельзя записать public/data/cars.json во время запроса (файловая система serverless только для чтения). Обновите данные локально: npm run update-cars, затем закоммитьте и запушьте public/data/cars.json.",
+      logs: ["[Vercel] запись в public/ недоступна, используйте локальный update-cars + git"],
+    };
+  }
+
   const outPath = outputPath();
   const logs: string[] = [];
   let cars: Car[] = [];
