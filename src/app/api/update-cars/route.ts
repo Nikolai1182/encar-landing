@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
 }
 
 async function handleUpdateCars(request: NextRequest) {
-  const expected = process.env.CRON_SECRET;
+  const expected = process.env.CRON_SECRET?.trim();
   if (!expected || expected.length < 16) {
     return NextResponse.json(
       {
