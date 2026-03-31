@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Encar Landing
 
-## Getting Started
+Современный **landing page** с автомобилями с корейского рынка: парсинг каталога [Encar.com](https://www.encar.com) и удобный просмотр объявлений в браузере.
 
-First, run the development server:
+## О проекте
+
+Интерфейс для просмотра подборки автомобилей из Кореи: сетка карточек, фильтры и читаемые названия на английском. Визуально и по UX ориентирован на лаконичный премиальный стиль в духе [millionmiles.ae](https://millionmiles.ae) — воздух, типографика, акцент на карточках товара.
+
+**Особенности:**
+
+- Адаптивная сетка карточек автомобилей  
+- Фильтры по марке, цене и году выпуска  
+- Названия автомобилей на английском (маппинг корейских данных)  
+- Обновление каталога по кнопке «Обновить данные»  
+- На продакшене (Vercel) — **ежедневное автоматическое обновление** по расписанию (cron → API → запись в `public/data/cars.json`)
+
+## Технологии
+
+| Область | Стек |
+|--------|------|
+| Фреймворк | **Next.js 15** (App Router) |
+| Язык | **TypeScript** |
+| Стили и UI | **Tailwind CSS**, **shadcn/ui** |
+| Архитектура | **Feature-Sliced Design** (FSD) |
+| Состояние | **Zustand** |
+| Парсинг | **Playwright** (headless Chromium; на Vercel — `@sparticuz/chromium`) |
+
+## Запуск проекта локально
+
+### 1. Клонирование и установка
+
+```bash
+git clone <ссылка-на-репозиторий>
+cd encar-landing
+npm install
+```
+
+Один раз установите браузер для Playwright (нужен для `npm run update-cars`):
+
+```bash
+npx playwright install chromium
+```
+
+### 2. Переменные окружения
+
+Скопируйте `.env.example` в `.env.local` и задайте минимум **`CRON_SECRET`** (длинная строка, ≥ 16 символов) — для защищённого API обновления каталога и кнопки на главной. Подробности см. в `.env.example`.
+
+### 3. Запуск в режиме разработки
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Приложение: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Обновление списка автомобилей (CLI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run update-cars
+```
 
-## Learn More
+Запускает парсер Encar (или fallback на мок-данные) и перезаписывает **`public/data/cars.json`**.
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Production-сборка
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Структура проекта (FSD)
 
-## Deploy on Vercel
+Корень исходников — **`src/`**. Слои:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Слой / папка | Назначение |
+|--------------|------------|
+| **`src/app/`** | Next.js App Router: страницы, layout, глобальные стили, **API Route** `/api/update-cars` |
+| **`src/entities/car/`** | Сущность «автомобиль»: типы, моки |
+| **`src/features/`** | Бизнес-логика: список и фильтры, парсер, обновление каталога |
+| **`src/widgets/`** | Крупные блоки UI: список машин, панель обновления |
+| **`src/page-layer/`** | Композиция страницы (хедер, hero, главная) |
+| **`src/shared/`** | UI-kit, утилиты, общие типы |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Статический каталог для фронта: **`public/data/cars.json`**.
+
+## Парсинг данных
+
+- Основной код — **`src/features/car-parser/`** (сценарий Playwright, маппинг полей Encar → модель приложения).  
+- Сайт Encar — **SPA**: данные приходят после выполнения JS, поэтому используется **браузерная автоматизация**, а не «голый» HTTP к HTML.  
+- Если парсер не вернул объявления или упал с ошибкой — подставляются **мок-данные** (`src/entities/car/model/mock.ts`), файл `cars.json` всё равно обновляется, чтобы лендинг оставался рабочим.
+
+## Автоматическое обновление на проде
+
+В корне репозитория — **`vercel.json`**: cron вызывает **`/api/update-cars`** раз в сутки (например, 03:00 UTC). Маршрут защищён секретом **`CRON_SECRET`** (`Authorization: Bearer …`). Подробная настройка переменных на Vercel и поведение API описаны в комментариях к **`.env.example`** и в коде **`src/app/api/update-cars/route.ts`**.
+
+## Примечание
+
+Сейчас UI читает каталог из **статического JSON** (`public/data/cars.json`). Это осознанный выбор: Encar — сложный SPA с защитой и меняющимися внутренними запросами; стабильный сбор данных опирается на **headless-браузер** и при необходимости может дополняться прокси и тонкой настройкой таймаутов (`ENCAR_SCRAPER_*` в `.env.example`).
+
+---
+
+**Скрипты NPM:** `npm run dev` · `npm run build` · `npm run update-cars` · `npm run lint` · `npm run format`

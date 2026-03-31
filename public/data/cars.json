@@ -1,0 +1,352 @@
+[
+  {
+    "id": "encar-40819089",
+    "brand": "Genesis",
+    "model": "GV80 3.0 Diesel AWD",
+    "year": 2020,
+    "mileage": 90546,
+    "price": 31103.7,
+    "photo": "https://ci.encar.com/carpicture01/pic4081/40819089_001.jpg",
+    "location": "부산"
+  },
+  {
+    "id": "encar-40583487",
+    "brand": "Kia",
+    "model": "New K9 2nd Gen 3.8 GDI AWD Ⅰ",
+    "year": 2022,
+    "mileage": 94663,
+    "price": 25622.22,
+    "photo": "https://ci.encar.com/carpicture08/pic4058/40583487_001.jpg",
+    "location": "부산"
+  },
+  {
+    "id": "encar-40161271",
+    "brand": "Hyundai",
+    "model": "Hybrid 2.0 Premium",
+    "year": 2014,
+    "mileage": 164073,
+    "price": 4222.22,
+    "photo": "https://ci.encar.com/carpicture06/pic4016/40161271_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-39273349",
+    "brand": "Hyundai",
+    "model": "Palisade (LX3) Gasoline 2.5T 2WD 9-seat Prestige",
+    "year": 2025,
+    "mileage": 400,
+    "price": 29659.26,
+    "photo": "https://ci.encar.com/carpicture07/pic3927/39273349_001.jpg",
+    "location": "서울"
+  },
+  {
+    "id": "encar-38611708",
+    "brand": "Kia",
+    "model": "New Carnival 9-seat High Limousine Prestige",
+    "year": 2016,
+    "mileage": 83631,
+    "price": 12962.96,
+    "photo": "https://ci.encar.com/carpicture01/pic3861/38611708_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-38087399",
+    "brand": "Kia",
+    "model": "3.3 GT Masters",
+    "year": 2021,
+    "mileage": 41177,
+    "price": 21407.41,
+    "photo": "https://ci.encar.com/carpicture08/pic3808/38087399_001.jpg",
+    "location": "부산"
+  },
+  {
+    "id": "encar-40844384",
+    "brand": "Hyundai",
+    "model": "Tucson (NX4) Diesel 2.0 2WD",
+    "year": 2023,
+    "mileage": 56503,
+    "price": 19481.48,
+    "photo": "https://ci.encar.com/carpicture04/pic4084/40844384_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-41129091",
+    "brand": "쉐보레(GM대우)",
+    "model": "New 1.4",
+    "year": 2018,
+    "mileage": 62967,
+    "price": 10000,
+    "photo": "https://ci.encar.com/carpicture02/pic4112/41129091_001.jpg",
+    "location": "서울"
+  },
+  {
+    "id": "encar-40785051",
+    "brand": "KG Mobility",
+    "model": "2nd Gen HEV 1.5 2WD S8",
+    "year": 2026,
+    "mileage": 7251,
+    "price": 25111.11,
+    "photo": "https://ci.encar.com/carpicture07/pic4077/40773011_001.jpg",
+    "location": "서울"
+  },
+  {
+    "id": "encar-40604857",
+    "brand": "Kia",
+    "model": "New K9 2nd Gen 3.8 GDI AWD Ⅰ",
+    "year": 2022,
+    "mileage": 94663,
+    "price": 25622.22,
+    "photo": "https://ci.encar.com/carpicture08/pic4058/40583487_001.jpg",
+    "location": "부산"
+  },
+  {
+    "id": "encar-40566608",
+    "brand": "Hyundai",
+    "model": "(JS) 2.0 N",
+    "year": 2021,
+    "mileage": 55695,
+    "price": 19992.59,
+    "photo": "https://ci.encar.com/carpicture05/pic4055/40554673_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-40820294",
+    "brand": "Genesis",
+    "model": "GV80 3.0 Diesel AWD",
+    "year": 2020,
+    "mileage": 90546,
+    "price": 31103.7,
+    "photo": "https://ci.encar.com/carpicture01/pic4081/40819089_001.jpg",
+    "location": "부산"
+  },
+  {
+    "id": "encar-40519529",
+    "brand": "Hyundai",
+    "model": "New Palisade Diesel 2.2 4WD",
+    "year": 2023,
+    "mileage": 30468,
+    "price": 36222.22,
+    "photo": "https://ci.encar.com/carpicture01/pic4051/40517111_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-37988993",
+    "brand": "쉐보레(GM대우)",
+    "model": "New 1.5 LTZ ( )",
+    "year": 2017,
+    "mileage": 123890,
+    "price": 6444.44,
+    "photo": "https://ci.encar.com/carpicture08/pic3798/37988789_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-41091557",
+    "brand": "KG Mobility",
+    "model": "New Rexton Sport Diesel 2.2 4WD Noble",
+    "year": 2024,
+    "mileage": 14326,
+    "price": 25185.19,
+    "photo": "https://ci.encar.com/carpicture08/pic4108/41088860_001.jpg",
+    "location": "인천"
+  },
+  {
+    "id": "encar-41162229",
+    "brand": "Genesis",
+    "model": "G80 (RG3) Gasoline 2.5 AWD ( )",
+    "year": 2025,
+    "mileage": 47521,
+    "price": 4.37,
+    "photo": "https://ci.encar.com/carpicture05/pic4115/41157942_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-41138580",
+    "brand": "쉐보레(GM대우)",
+    "model": "New 1.4",
+    "year": 2018,
+    "mileage": 62967,
+    "price": 10000,
+    "photo": "https://ci.encar.com/carpicture02/pic4112/41129091_001.jpg",
+    "location": "서울"
+  },
+  {
+    "id": "encar-41159961",
+    "brand": "Kia",
+    "model": "Carnival 4th Gen 9-seat Signature",
+    "year": 2022,
+    "mileage": 138416,
+    "price": 20222.22,
+    "photo": "https://ci.encar.com/carpicture05/pic4115/41159950_027.jpg",
+    "location": "서울"
+  },
+  {
+    "id": "encar-41089923",
+    "brand": "Kia",
+    "model": "Carnival 4th Gen 9-seat Signature",
+    "year": 2021,
+    "mileage": 163240,
+    "price": 16666.67,
+    "photo": "https://ci.encar.com/carpicture07/pic4107/41074546_001.jpg",
+    "location": "인천"
+  },
+  {
+    "id": "encar-41044715",
+    "brand": "Hyundai",
+    "model": "1.6 Premium",
+    "year": 2023,
+    "mileage": 36102,
+    "price": 14066.67,
+    "photo": "https://ci.encar.com/carpicture02/pic4102/41029035_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-41042016",
+    "brand": "쉐보레(GM대우)",
+    "model": "LT",
+    "year": 2016,
+    "mileage": 72280,
+    "price": 3696.3,
+    "photo": "https://ci.encar.com/carpicture02/pic4102/41028950_001.jpg",
+    "location": "충남"
+  },
+  {
+    "id": "encar-41053309",
+    "brand": "Renault Korea",
+    "model": "QM6 Gasoline 2WD RE Signature",
+    "year": 2019,
+    "mileage": 91400,
+    "price": 10296.3,
+    "photo": "https://ci.encar.com/carpicture05/pic4105/41050152_001.jpg",
+    "location": "대구"
+  },
+  {
+    "id": "encar-41002561",
+    "brand": "Hyundai",
+    "model": "New Grandeur IG Hybrid",
+    "year": 2022,
+    "mileage": 70116,
+    "price": 20962.96,
+    "photo": "https://ci.encar.com/carpicture09/pic4099/40997358_001.jpg",
+    "location": "대구"
+  },
+  {
+    "id": "encar-40991141",
+    "brand": "Hyundai",
+    "model": "New Grandeur IG 2.5",
+    "year": 2020,
+    "mileage": 70448,
+    "price": 20666.67,
+    "photo": "https://ci.encar.com/carpicture07/pic4097/40976215_001.jpg",
+    "location": "대구"
+  },
+  {
+    "id": "encar-40136690",
+    "brand": "KG Mobility",
+    "model": "G4 Rexton Diesel 2.2 2WD",
+    "year": 2018,
+    "mileage": 47569,
+    "price": 12437.04,
+    "photo": "https://ci.encar.com/carpicture02/pic4012/40124244_001.jpg",
+    "location": "충남"
+  },
+  {
+    "id": "encar-40074944",
+    "brand": "KG Mobility",
+    "model": "New Rexton Sport Diesel 2.2 4WD",
+    "year": 2023,
+    "mileage": 29843,
+    "price": 20666.67,
+    "photo": "https://ci.encar.com/carpicture06/pic4006/40060643_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-41131334",
+    "brand": "Genesis",
+    "model": "GV80 3.0 Diesel AWD",
+    "year": 2020,
+    "mileage": 162404,
+    "price": 23703.7,
+    "photo": "https://ci.encar.com/carpicture02/pic4112/41129342_001.jpg",
+    "location": "대전"
+  },
+  {
+    "id": "encar-41162149",
+    "brand": "Kia",
+    "model": "Carnival 4th Gen Gasoline 7-seat Noble",
+    "year": 2023,
+    "mileage": 40081,
+    "price": 24074.07,
+    "photo": "https://ci.encar.com/carpicture04/pic4114/41147294_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-40794891",
+    "brand": "Kia",
+    "model": "K8 3.5 Gasoline 4WD Platinum",
+    "year": 2022,
+    "mileage": 16734,
+    "price": 20888.89,
+    "photo": "https://ci.encar.com/carpicture09/pic4079/40794891_001.jpg",
+    "location": "인천"
+  },
+  {
+    "id": "encar-40629286",
+    "brand": "쉐보레(GM대우)",
+    "model": "New 1.6 Diesel LT Premium",
+    "year": 2019,
+    "mileage": 116373,
+    "price": 5918.52,
+    "photo": "https://ci.encar.com/carpicture02/pic4062/40629286_001.jpg",
+    "location": "인천"
+  },
+  {
+    "id": "encar-40273892",
+    "brand": "Kia",
+    "model": "K8 3.5 Gasoline 2WD Noble",
+    "year": 2022,
+    "mileage": 71428,
+    "price": 18888.89,
+    "photo": "https://ci.encar.com/carpicture07/pic4027/40273892_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-40554673",
+    "brand": "Hyundai",
+    "model": "(JS) 2.0 N",
+    "year": 2021,
+    "mileage": 55695,
+    "price": 19992.59,
+    "photo": "https://ci.encar.com/carpicture05/pic4055/40554673_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-40124244",
+    "brand": "KG Mobility",
+    "model": "G4 Rexton Diesel 2.2 2WD",
+    "year": 2018,
+    "mileage": 47569,
+    "price": 12437.04,
+    "photo": "https://ci.encar.com/carpicture02/pic4012/40124244_001.jpg",
+    "location": "충남"
+  },
+  {
+    "id": "encar-40317404",
+    "brand": "Kia",
+    "model": "New (JA) Luxury",
+    "year": 2017,
+    "mileage": 92861,
+    "price": 5037.04,
+    "photo": "https://ci.encar.com/carpicture01/pic4031/40317404_001.jpg",
+    "location": "경기"
+  },
+  {
+    "id": "encar-39276115",
+    "brand": "Hyundai",
+    "model": "Santa Fe Diesel 2.0 2WD Exclusive Special",
+    "year": 2016,
+    "mileage": 141853,
+    "price": 8814.81,
+    "photo": "https://ci.encar.com/carpicture07/pic3927/39276115_001.jpg",
+    "location": "경기"
+  }
+]

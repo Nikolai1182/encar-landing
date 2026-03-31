@@ -24,14 +24,18 @@
 .DS_Store
 *.pem
 
+# Playwright / Encar scraper debug artifacts
+/debug/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — секреты не коммитим; шаблон .env.example отслеживаем в git
 .env*
+!.env.example
 
 # vercel
 .vercel
